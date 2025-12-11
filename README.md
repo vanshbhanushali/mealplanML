@@ -31,3 +31,24 @@
 ```bash
 git clone [https://github.com/YOUR_USERNAME/mealplanML.git](https://github.com/YOUR_USERNAME/mealplanML.git)
 cd mealplanML
+```
+### 2. backend setup
+```bash
+cd backend
+python -m venv venv
+# Windows:
+.\venv\Scripts\Activate
+# Linux/Mac:
+source venv/bin/activate
+
+pip install -r requirements.txt
+python -m app.seed  # Initialize Database
+uvicorn app.main:app --reload
+```
+
+### 3. frontend setup
+```bash
+cd frontend/mealpro
+npm install
+npm run dev
+```
