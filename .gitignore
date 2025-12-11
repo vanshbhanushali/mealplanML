@@ -1,0 +1,9 @@
+# Master Ignore List
+backend/venv/
+backend/__pycache__/
+*.pyc
+*.db
+backend/data/*.db
+frontend/mealpro/node_modules/
+frontend/mealpro/.next/
+.env
